@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.label {
+  width: 100%;
+  margin-right: 30px;
+
+}
+
+.label input {
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto, sans-serif;
+  border-bottom: 2px solid rgba(209, 81, 81, 0.425);
+  margin-bottom: 20px;
+}
+
+.label input:focus {
+  border-bottom: 2px solid rgb(206, 87, 87);
+}
+
+.label input:last-child {
+  margin-bottom: 40px;
+}
+
+.form button {
+  width: 40%;
+  border: 1px solid rgba(209, 81, 81, 0.425);
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 30px;
+  transition: 450ms;
+  padding: 5px;
+
+}
+
+.form button:hover {
+  background-color: rgba(209, 81, 81, 0.425);
+}

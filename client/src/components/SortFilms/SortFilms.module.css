@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 15%;
+  border: 1px solid rgba(209, 81, 81, 0.425);
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  transition: 450ms;
+
+}
+
+.button:hover {
+  background-color: rgba(209, 81, 81, 0.425);
+}

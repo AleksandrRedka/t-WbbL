@@ -1,0 +1,9 @@
+.containerCreate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.create {
+  width: 45%;
+}

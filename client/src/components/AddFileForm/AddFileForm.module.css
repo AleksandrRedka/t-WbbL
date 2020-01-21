@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  width: 50%;
+  position: relative;
+  font-size: 24px;
+  line-height: 30px;
+  border: 1px solid rgba(209, 81, 81, 0.425);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  transition: 450ms;
+  margin-right: 30px;
+}
+
+.label:hover {
+  background-color: rgba(209, 81, 81, 0.425);
+}
+
+.label>input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+}
+
+
+.form button {
+  width: 40%;
+  border: 1px solid rgba(209, 81, 81, 0.425);
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 30px;
+  transition: 450ms;
+  padding: 5px;
+
+}
+
+.form button:hover {
+  background-color: rgba(209, 81, 81, 0.425);
+}

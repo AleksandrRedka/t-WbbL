@@ -1,0 +1,20 @@
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 0;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
+}
+
+.navList li {
+  margin-right: 40px;
+}
+
+.navList li:last-child {
+  margin-right: 0
+}
+
+.linkActive {
+  color: rgb(206, 87, 87)
+}
