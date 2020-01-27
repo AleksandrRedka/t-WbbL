@@ -28,6 +28,18 @@ router.post(
         })
       }
       const { title, release, format, actors } = req.body
+      const findDouble = await Film.find({
+        title: title,
+        release: release,
+        actors: actors
+      })
+      console.log('FIND___DOUBLE', findDouble)
+      if (findDouble.length > 0) {
+        return res.status(406).json({
+          status: 406,
+          message: 'Фильм уже существует'
+        })
+      }
       const film = new Film({ title, release, format, actors })
       await film
         .save()
