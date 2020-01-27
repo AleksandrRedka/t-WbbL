@@ -23,7 +23,31 @@ const idReducer = (state = null, { type, payload }) => {
   }
 };
 
+const containerInfoReducer = (state = false, { type, payload }) => {
+  switch (type) {
+    case Type.SHOW_INFO:
+      return payload;
+    case Type.HIDE_INFO:
+      return payload;
+    default:
+      return state;
+  }
+};
+
+const containerDeleteReducer = (state = false, { type, payload }) => {
+  switch (type) {
+    case Type.SHOW_DELETE:
+      return payload;
+    case Type.HIDE_DELETE:
+      return payload;
+    default:
+      return state;
+  }
+};
+
 export default combineReducers({
   modalState: modalStateReduser,
+  containerInfo: containerInfoReducer,
+  containerDelete: containerDeleteReducer,
   id: idReducer,
 });

@@ -9,7 +9,7 @@ export const generateId = generate();
 export const toastShow = (text, typeToast) => {
   toast[typeToast](`${text}`, {
     position: 'top-right',
-    autoClose: 1500,
+    autoClose: 2000,
     hideProgressBar: true,
     closeOnClick: true,
     pauseOnHover: false,

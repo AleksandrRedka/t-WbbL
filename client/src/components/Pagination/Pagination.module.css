@@ -1,0 +1,61 @@
+.paginationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+
+}
+
+.paginationLi,
+.paginationButton {
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 2px solid rgba(209, 81, 81, 0.425);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  transition: 450ms;
+}
+
+.paginationLink {
+  font-size: 16px;
+  left: 20px;
+  background-color: transparent;
+}
+
+.paginationLink:hover {
+  background-color: transparent;
+}
+
+.paginationLiActive {
+  composes: paginationLi;
+  background-color: rgba(209, 81, 81, 0.65);
+}
+
+.paginationButton {
+  width: 7%;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: rgba(209, 81, 81, 0.10)
+}
+
+.paginationButton:disabled {
+  border: 1px solid rgb(190, 190, 190);
+  background-color: rgb(235, 233, 233);
+  cursor: auto;
+
+}
+
+.paginationLi:hover {
+  transform: scale(1.1);
+  background-color: rgba(209, 81, 81, 0.65);
+}

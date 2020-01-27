@@ -29,6 +29,15 @@
   height: 1px;
 }
 
+.label span {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #00a224;
+  font-size: 14px;
+  line-height: 16px;
+}
 
 .form button {
   width: 40%;

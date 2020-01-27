@@ -22,7 +22,6 @@ const SearchForm = ({
           value={searchFilm}
           autoComplete='off'
           onChange={onChangeFilm}
-          autoComplete='off'
         />
       </label>
       <label htmlFor={generateId()} className={styles.label}>
@@ -33,7 +32,6 @@ const SearchForm = ({
           value={searchActor}
           autoComplete='off'
           onChange={onChangeActor}
-          autoComplete='off'
         />
       </label>
     </form>

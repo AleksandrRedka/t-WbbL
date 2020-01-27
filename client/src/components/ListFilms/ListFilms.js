@@ -31,7 +31,7 @@ const ListFilms = ({ films, onMore, onDelete, fetchAllFilms }) => {
             <button
               type='button'
               className={styles.delete}
-              onClick={() => onDelete(film.id)}
+              onClick={() => onDelete(film.id, film.title)}
             >
               Delete
             </button>
