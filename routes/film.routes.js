@@ -33,7 +33,6 @@ router.post(
         release: release,
         actors: actors
       })
-      console.log('FIND___DOUBLE', findDouble)
       if (findDouble.length > 0) {
         return res.status(406).json({
           status: 406,

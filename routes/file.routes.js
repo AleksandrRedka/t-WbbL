@@ -34,8 +34,21 @@ router.post('/file', upload.single('file'), async (req, res) => {
       return arr
     }
     const arrFilms = await getArrFilms(data)
-    const film = await Film.create(arrFilms)
+    arrFilms.map(async item => {
+      const { title, release, format, actors } = item
+      const findDouble = await Film.find({
+        title: title,
+        release: release,
+        actors: actors
+      })
+      if (findDouble.length > 0) {
+        return
+      }
+      const film = new Film({ title, release, format, actors })
+      film.save()
+    })
     res.status(201).json({ status: 201, message: 'Comlpite' })
+    // const film = await Film.create(arrFilms)
   } catch (e) {
     console.log('ERROR:', e)
     res.status(500).json({ message: 'Что то пошло не так' })
